@@ -1,0 +1,30 @@
+# ─── Ядро LangChain ──────────────────────────────────────────────────────────
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-ollama
+langchain-huggingface
+
+# ─── Векторное хранилище ─────────────────────────────────────────────────────
+chromadb
+langchain-chroma
+
+# ─── Эмбеддинги ──────────────────────────────────────────────────────────────
+sentence-transformers
+# torch ставится автоматически.
+# Для CPU-only (экономия ~1.5 GB, установить отдельно после):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# ─── Загрузка документов ─────────────────────────────────────────────────────
+pypdf
+python-docx
+python-pptx
+unstructured
+unstructured[docx,pptx]
+
+# ─── HTTP / конфиг / UI ──────────────────────────────────────────────────────
+requests
+pydantic>=2.0
+pydantic-settings>=2.0
+gradio
